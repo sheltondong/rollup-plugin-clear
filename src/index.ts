@@ -9,8 +9,8 @@ interface Options {
 
 const clear = (options: Options) => {
     const targets = options.targets || [];
-    // 在rollup watch模式下，当recompile的时候是否clear，默认true
-    const watch = options.watch === false ? false : true;
+    // 在rollup watch模式下，当recompile的时候是否clear，默认false
+    const watch = options.watch === true ? true : false;
     const workspace = process.cwd();
 
     /**
