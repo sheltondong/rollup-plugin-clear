@@ -11,14 +11,14 @@ const config = {
     format: 'cjs',
   },
   plugins: [
+    // rollup-plugin-progress
+    progress(),
     // rollup-plugin-node-resolve
     resolve(),
     // rollup-plugin-typescript2
     typescript(),
     // rollup-plugin-filesize
     filesize(),
-    // rollup-plugin-progress
-    progress(),
     // rollup-plugin-commonjs
     commonjs(),
     // rollup-plugin-alias

@@ -1,5 +1,7 @@
 *_cache
 
+coverage
+
 node_modules
 
 src
@@ -7,3 +9,9 @@ src
 test
 
 package-lock.json
+
+rollup.config.js
+
+tsconfig.json
+
+tslint.json
