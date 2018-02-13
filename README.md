@@ -1,11 +1,10 @@
 # rollup-plugin-clear
---- 
 Rollup clear plugin
 ### Installation
---- 
-`npm install --save-dev rollup-plugin-clear`
+```shell
+npm install --save-dev rollup-plugin-clear
+```
 ### Usage
---- 
 ```javascript
 // rollup.config.js
 import clear from 'rollup-plugin-clear'
