@@ -1,8 +1,13 @@
-import fs from 'fs';
-import path from 'path';
-import rimraf from 'rimraf';
+import * as fs from 'fs';
+import * as path from 'path';
+import * as rimraf from 'rimraf';
 
-const clear = (options) => {
+interface Options {
+    targets: string[];
+    watch?: boolean;
+}
+
+const clear = (options: Options) => {
     const targets = options.targets || [];
     // 在rollup watch模式下，当recompile的时候是否clear，默认true
     const watch = options.watch === false ? false : true;
@@ -10,31 +15,30 @@ const clear = (options) => {
 
     /**
      * 清楚目标路径
-     * 
-     * @param {array} targets 
+     *
+     * @param {array} targets
      */
-    const clear = (targets) => {
+    const clear = (targets: string[]) => {
         for (let index = 0; index < targets.length; index++) {
             const e = targets[index];
             const target = path.resolve(workspace, e);
-            if(fs.existsSync(target)) {
-                
+            if (fs.existsSync(target)) {
                 rimraf.sync(target);
                 console.log('cleared: ', target);
             }
         }
-    }
+    };
     clear(targets);
 
     return {
         name: 'clear',
-        load: (id) => {
+        load: (id: string) => {
             if (watch) {
                 clear(targets);
             }
             return null;
         }
-    }
-}
+    };
+};
 
 export default clear;
