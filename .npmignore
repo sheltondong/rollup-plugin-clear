@@ -1,3 +1,9 @@
+*_cache
+
 node_modules
 
+src
+
 test
+
+package-lock.json
