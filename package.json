@@ -1,0 +1,30 @@
+{
+  "name": "rollup-plugin-clear",
+  "version": "1.0.0",
+  "description": "Rollup clean plugin",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "node_modules/.bin/jest"
+  },
+  "keywords": [
+    "rollup",
+    "rollup-plugin",
+    "clear",
+    "clean"
+  ],
+  "author": "Shelton Dong <dongxu2048@gmail.com>",
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "https://www.npmjs.com"
+  },
+  "devDependencies": {
+    "@types/jest": "^22.1.2",
+    "babel-jest": "^22.2.2",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "jest": "^22.2.2"
+  },
+  "dependencies": {
+    "rimraf": "^2.6.2"
+  }
+}
