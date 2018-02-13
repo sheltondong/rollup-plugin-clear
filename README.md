@@ -17,7 +17,7 @@ const config = {
             // required, point out which directories should be clear.
             targets: ['some directory'],
             // optional, whether clear the directores when rollup recompile on --watch mode.
-            watch: false, // default: true
+            watch: true, // default: false
         })
     ]
 }
