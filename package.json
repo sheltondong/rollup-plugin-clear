@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-clear",
-  "version": "2.0.5",
+  "version": "2.0.7",
   "description": "Rollup clean plugin",
   "main": "./dist/index.js",
   "scripts": {

@@ -24,4 +24,4 @@ const config = {
 
 export default config;
 ```
-This plugin would auto clear the specific directories every time the rollup bundle your resource.
+This plugin can help you to clear the specific directories when the rollup bundle your resource.
